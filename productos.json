@@ -1,0 +1,92 @@
+{
+  "productos": [
+    {
+      "id": "prod1",
+      "nombre": "Patines Urbanos Pro",
+      "precio": 89990,
+      "precioFormateado": "$89.990",
+      "imagen": "img/productos/producto1.jpg",
+      "imagenes": [
+        "img/productos/producto1-1.jpg",
+        "img/productos/producto1-2.jpg"
+      ],
+      "categoria": "patines",
+      "descripcionCorta": "Patines diseñados para el patinaje urbano con ruedas de 90mm y rodamientos ABEC-9.",
+      "descripcionLarga": "Patines de alto rendimiento diseñados específicamente para patinaje urbano. Ideal para desplazamientos por la ciudad y práctica de técnicas freestyle.",
+      "detalles": [
+        "Ruedas de 90mm con dureza 85A para máxima velocidad y agarre",
+        "Rodamientos ABEC-9 de alta precisión y velocidad",
+        "Botas con sistema de cierre seguro y cómodo acolchado"
+      ],
+      "stock": 15,
+      "destacado": true,
+      "orden": 1
+    },
+    {
+      "id": "prod2",
+      "nombre": "Kit de Protección Completo",
+      "precio": 45990,
+      "precioFormateado": "$45.990",
+      "imagen": "img/productos/producto2.jpg",
+      "imagenes": [
+        "img/productos/producto2-1.jpg",
+        "img/productos/producto2-2.jpg"
+      ],
+      "categoria": "proteccion",
+      "descripcionCorta": "Protección para muñecas, codos, rodillas y casco homologado para todas las edades.",
+      "descripcionLarga": "Set completo de protecciones para una práctica segura del patinaje en cualquier disciplina. Diseñado para máxima absorción de impactos.",
+      "detalles": [
+        "Incluye protectores de muñecas, codos, rodillas y casco homologado",
+        "Material resistente y transpirable para mayor comodidad",
+        "Ajuste con velcro para diferentes tallas"
+      ],
+      "stock": 8,
+      "destacado": true,
+      "orden": 2
+    },
+    {
+      "id": "prod3",
+      "nombre": "Polera Oficial IndepeRoller",
+      "precio": 15990,
+      "precioFormateado": "$15.990",
+      "imagen": "img/productos/producto3.jpg",
+      "imagenes": [
+        "img/productos/producto3-1.jpg",
+        "img/productos/producto3-2.jpg"
+      ],
+      "categoria": "ropa",
+      "descripcionCorta": "Polera deportiva con logo del club, ideal para entrenamientos y competencias.",
+      "descripcionLarga": "Polera deportiva oficial del club IndepeRoller, fabricada con materiales de alta calidad para máxima comodidad durante la práctica deportiva.",
+      "detalles": [
+        "Material 100% poliéster transpirable",
+        "Diseño exclusivo con logo bordado del club",
+        "Disponible en tallas S, M, L y XL"
+      ],
+      "stock": 20,
+      "destacado": true,
+      "orden": 3
+    },
+    {
+      "id": "prod4",
+      "nombre": "Set de Ruedas Speed",
+      "precio": 32990,
+      "precioFormateado": "$32.990",
+      "imagen": "img/productos/producto4.jpg",
+      "imagenes": [
+        "img/productos/producto4-1.jpg",
+        "img/productos/producto4-2.jpg"
+      ],
+      "categoria": "accesorios",
+      "descripcionCorta": "Set de 8 ruedas de 100mm, dureza 85A, ideales para velocidad en superficies lisas.",
+      "descripcionLarga": "Juego de 8 ruedas de alta velocidad para patines en línea. Diseñadas para proporcionar máxima velocidad en superficies lisas.",
+      "detalles": [
+        "Diámetro: 100mm, ideal para patinaje de velocidad",
+        "Dureza: 85A, excelente equilibrio entre velocidad y agarre",
+        "Núcleo de alta resistencia para mayor durabilidad"
+      ],
+      "stock": 0,
+      "destacado": true,
+      "orden": 4
+    }
+  ]
+}

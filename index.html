@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<style>
+    @font-face {
+        font-family: 'Capture_it';
+        src: url('fonts/Capture_it') format('woff2'),
+             url('fonts/Capture_it.woff') format('woff'),
+             url('fonts/Capture_it.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+</style>    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IndepeRoller - Club de patinaje urbano en Santiago. Aprende a patinar en un ambiente seguro y divertido. Clases para todas las edades y niveles.">
+    <meta name="keywords" content="patinaje urbano, skate cross, patinaje alpino, clases de patinaje, Santiago, Independencia">
+    <meta name="author" content="IndepeRoller">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="IndepeRoller - Club de Patinaje Urbano">
+    <meta property="og:description" content="IndepeRoller - Club de patinaje urbano en Santiago. Aprende a patinar en un ambiente seguro y divertido. Clases para todas las edades y niveles.">
+    <meta property="og:image" content="img/logo_indeperoller.png">
+    <meta property="og:url" content="https://indeperoller.cl">
+    <meta property="og:type" content="website">
+    <title>IndepeRoller - Club de Patinaje Urbano</title>    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#home" class="logo">
+                <img src="img/logo_indeperoller.png" alt="Logo IndepeRoller" style="height: 40px; margin-right: 10px;"><span style="font-family: 'Capture_it', sans-serif; color: black;">Indepe<span style="color: var(--orange); font-family: 'Capture_it', sans-serif;">Roller</span></span></a>
+                <!-- <span style="font-family: 'Capture_it', sans-serif;">Indepe<span style="color: var(--orange); font-family: 'Capture_it', sans-serif">Roller</span></span> -->
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">¿Quiénes Somos?</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">¿Qué Hacemos?</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link">Galería</a></li>
+                    <li class="nav-item"><a href="#disciplines" class="nav-link">Disciplinas</a></li>
+		    <li class="nav-item"><a href="tiendita.html" class="nav-link">Tiendita Roller</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="img/logo_ampliado_sin_fondo.png" alt="Logo transparemte">
+            <h1>¡Bienvenidos a IndepeRoller!</h1>
+            <p>Rodar, aprender y pasarlo bien: eso es IndepeRoller. Únete a una comunidad donde el patinaje es libertad, desde moverte por la ciudad hasta probar SkateCross o Alpino. Para chicos, grandes y quienes recién empiezan. ¡Súbete a los patines y disfruta el viaje!</p>
+            <a href="#contact" class="btn btn-orange">Únete ahora</a>
+        </div>
+        <div class="wave"></div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>¿Quiénes Somos?</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text animate">
+                    <h3>Nuestra Historia</h3>
+                    <p>IndepeRoller es un club que se formó en la Comuna de Independencia, bajo la dirección de Evelyn Gonzalez, con los siguientes objetivos:</p>
+                    <ul>
+                        <li>Fomentar el deporte y la actividad física en la comuna de Independencia, especialmente entre niños y jóvenes.</li>
+                        <li>Promover el patinaje urbano como una alternativa recreativa y deportiva.</li>
+                        <li>Ofrecer un espacio inclusivo y seguro para la recreación, la participación familiar y la vida en comunidad.</li>
+                        <li>Recuperar el espacio público como escenario activo de cultura y deporte, impulsando la apropiación positiva del entorno barrial.</li>
+                        <li>Impulsar la formación de nuevos talentos deportivos, con miras a integrar a jóvenes promesas a las selecciones nacionales del patinaje urbano, particularmente en la categoría junior.</li>
+                    </ul>
+                </div>
+                <div class="about-image animate">
+                    <img src="img/historia.jpg" alt="Club de patinaje IndepeRoller" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Actualización de la sección "Qué Hacemos" con iconos de patinaje -->
+<section id="services" class="services">
+    <div class="wave-top"></div>
+    <div class="container">
+        <div class="section-title">
+            <h2>¿Qué Hacemos?</h2>
+        </div>
+        <div class="service-cards">
+            <div class="service-card animate">
+                <i class="fas fa-skating"></i> <!-- Icono de patinaje -->
+                <h3>Clases de Patinaje</h3>
+                <p>Ofrecemos clases para principiantes, tanto niños como adultos, en un ambiente seguro y divertido.</p>
+            </div>
+            <div class="service-card animate">
+                <i class="fas fa-users"></i> <!-- Mantenemos este icono de grupos -->
+                <h3>Clases Grupales por Disciplina</h3>
+                <p>Disponemos de diferentes niveles y disciplinas para que cada patinador encuentre su estilo.</p>
+            </div>
+            <div class="service-card animate">
+                <i class="fas fa-medal"></i> <!-- Cambiado a estrella para representar talentos -->
+                <h3>Apoyo a Jóvenes Promesas</h3>
+                <p>Brindamos apoyo especial a jóvenes talentos para participar en campeonatos nacionales e internacionales.</p>
+            </div>
+           <div class="service-card animate">
+           	<i class="fas fa-calendar-check"></i> <!-- Cambiado a calendario con check para eventos -->
+                <h3>Organización de Eventos</h3>
+                <p>Creamos y organizamos eventos relacionados con el patinaje para toda la comunidad.</p>
+            </div>
+            <div class="service-card animate">
+                <i class="fas fa-trophy"></i> <!-- Mantenemos este icono de trofeo -->
+                <h3>Torneos Competitivos</h3>
+                <p>Organizamos torneos de diferentes disciplinas para fomentar el espíritu deportivo.</p>
+            </div>
+        </div>
+    </div>
+    <div class="wave-bottom"></div>
+</section>
+
+<!-- Actualización de la sección de galería en index.html -->
+<section id="gallery" class="gallery">
+    <div class="container">
+        <div class="section-title">
+            <h2>Galería</h2>
+        </div>
+        <div class="gallery-container">
+            <!-- Primer elemento de galería -->
+            <div class="gallery-item animate">
+                <a href="gallery-rollerfest.html">
+                    <img src="img/galeria1.PNG" alt="Roller Fest 2025" loading="lazy">
+                    <div class="gallery-caption">
+                        <h3>Roller Fest 2025</h3>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Segundo elemento de galería -->
+            <div class="gallery-item animate">
+                <a href="gallery-skatecross.html">
+                    <img src="img/galeria2.jpg" alt="1ra Fecha Liga Chilena Skate Cross" loading="lazy">
+                    <div class="gallery-caption">
+                        <h3>1ra Fecha Liga Chilena Skate Cross</h3>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Tercer elemento de galería -->
+            <div class="gallery-item animate">
+                <a href="gallery-tips.html">
+                    <img src="img/galeria3.jpg" alt="Tips Sobre Ruegas" loading="lazy">
+                    <div class="gallery-caption">
+                        <h3>Tips Sobre Ruedas</h3>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- PLANTILLA PARA AGREGAR NUEVA GALERÍA
+            <div class="gallery-item animate">
+                <a href="gallery-NOMBRE.html">
+                    <img src="img/RUTA_IMAGEN.jpg" alt="NOMBRE_GALERÍA">
+                    <div class="gallery-caption">
+                        <h3>TÍTULO_GALERÍA</h3>
+                    </div>
+                </a>
+            </div>
+            -->
+        </div>
+    </div>
+</section>
+
+<section id="disciplines" class="disciplines">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestras Disciplinas</h2>
+            </div>
+            <div class="disciplines-content">
+                <div class="discipline-card animate">
+                    <div class="discipline-image">
+                        <img src="img/urbano.PNG" alt="Patinaje Urbano" loading="lazy">
+                    </div>
+                    <div class="discipline-info">
+                        <h3>Patinaje Urbano</h3>
+                        <p>Aprende a moverte con seguridad y estilo por la ciudad, desarrollando habilidades para superar obstáculos urbanos.</p>
+                    </div>
+                </div>
+                <div class="discipline-card animate">
+                    <div class="discipline-image">
+                        <img src="img/acondicionamiento.PNG" alt="Acondicionamiento Fisico" loading="lazy">
+                    </div>
+                    <div class="discipline-info">
+                        <h3>Acondicionamiento Físico</h3>
+                        <p>Ejercicios funcionales para fortalecer músculos, mejorar resistencia y preparar tu cuerpo para patinar mejor.</p>
+                    </div>
+                </div>
+                <div class="discipline-card animate">
+                    <div class="discipline-image">
+                        <img src="img/skatecross.PNG" alt="SkateCross" loading="lazy">
+                    </div>
+                    <div class="discipline-info">
+                        <h3>SkateCross</h3>
+                        <p>Una emocionante disciplina donde varios patinadores compiten simultáneamente en un circuito con curvas y obstáculos.</p>
+                    </div>
+                </div>
+                <div class="discipline-card animate">
+                    <div class="discipline-image">
+                        <img src="img/alpino.jpg" alt="Patinaje Alpino" loading="lazy">
+                    </div>
+                    <div class="discipline-info">
+                        <h3>Patinaje Alpino</h3>
+                        <p>Descenso en patines por pendientes, similar al esquí alpino, combinando velocidad y técnica en un deporte extremo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Sección de Tienda - Agregar antes de la sección de contacto -->
+<section id="store" class="store">
+    <div class="container">
+        <div class="section-title">
+            <h2>Tiendita Roller</h2>
+        </div>
+        <div class="store-description">
+            <p>Equipamiento, accesorios y merchandising oficial de IndepeRoller. Todo lo que necesitas para disfrutar del patinaje urbano con estilo y seguridad.</p>
+        </div>
+
+        <div id="productos-destacados" class="store-grid">
+            <!-- Los productos se cargarán dinámicamente aquí -->
+        </div>
+        
+        <!-- Botón centrado para ir a la tienda completa -->
+        <div class="text-center" style="margin-top: 30px;">
+            <a href="tiendita.html" class="btn btn-orange">Ver todos los productos</a>
+        </div>
+        
+    </div>
+</section>
+    <section id="contact" class="contact">
+
+        <div class="container">
+            <div class="section-title">
+                <h2>Contacto</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info animate">
+                    <h3>¿Quieres unirte o saber más?</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-item-content">
+                                <p>evelyn.gonzalez.ca@usach.cl</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-item-content">
+                                <p>+569 XXXX XXXX</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-item-content">
+                                <p>Comuna de Independencia, Santiago, Chile</p>
+                            </div>
+                        </div>
+                    </div>
+		    <!-- Enlace a AgendaPro - Agregar después de los enlaces sociales -->
+		    <div class="appointment-section">
+    			<h3>Agenda tu clase</h3>
+    			<p>Reserva y paga tus clases online de manera fácil y rápida.</p>
+    			<a href="https://www.agendapro.com/" target="_blank" class="btn btn-orange appointment-btn">
+        		    <i class="far fa-calendar-alt"></i> Agendar clase
+    			</a>
+		    </div>
+                    <h3>Síguenos en redes</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/indepe.roller" class="social-link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div style="margin-top: 30px;">
+                        <a href="mailto:evelyn.gonzalez.ca@usach.cl" class="btn btn-orange">Escríbenos un correo</a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d416.3050997203081!2d-70.67267865529999!3d-33.411750500608406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c42b8711508b%3A0xcc4be2c801f9a820!2sMirador%20Viejo%2C%208390334%20Independencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1744655283267!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>IndepeRoller - Club de Patinaje Urbano</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">¿Quiénes Somos?</a></li>
+                <li><a href="#services">¿Qué Hacemos?</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#disciplines">Disciplinas</a></li>
+		<li><a href="tiendita.html">Tiendita Roller</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="copyright">
+                <p>&copy; 2025 IndepeRoller. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menú hamburguesa
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+
+        // Animaciones al hacer scroll
+        const animateElements = document.querySelectorAll('.animate');
+
+        function checkScroll() {
+            animateElements.forEach(el => {
+                const elTop = el.getBoundingClientRect().top;
+                const triggerPoint = window.innerHeight * 0.8;
+                
+                if (elTop < triggerPoint) {
+                    el.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('load', checkScroll);
+        window.addEventListener('scroll', checkScroll);
+
+        // Scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<!-- Script para cargar productos destacados -->
+<script>
+    // Función para cargar productos destacados en la página principal
+    async function cargarProductosDestacados() {
+        try {
+            // Cargar productos desde el JSON
+            const response = await fetch('productos.json');
+            const data = await response.json();
+            
+            // Filtrar solo productos destacados y ordenarlos
+            const destacados = data.productos
+                .filter(p => p.destacado)
+                .sort((a, b) => a.orden - b.orden)
+                .slice(0, 3); // Mostrar máximo 3 productos
+            
+            const contenedor = document.getElementById('productos-destacados');
+            
+            // Limpiar contenedor
+            contenedor.innerHTML = '';
+            
+            // Crear tarjetas de productos
+            destacados.forEach(producto => {
+                // Determinar estado del stock
+                let stockClass = producto.stock > 0 ? '' : 'opacity: 0.7;';
+                let buttonText = producto.stock > 0 ? 'Ver detalles' : 'Agotado';
+                let buttonDisabled = producto.stock > 0 ? '' : 'disabled';
+                
+                const productoHTML = document.createElement('div');
+                productoHTML.className = 'product-card animate';
+                productoHTML.innerHTML = `
+                    <div class="product-image" style="${stockClass}">
+                        <img src="${producto.imagen}" alt="${producto.nombre}" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>${producto.nombre}</h3>
+                        <p>${producto.descripcionCorta}</p>
+                        <div class="product-price">${producto.precioFormateado}</div>
+                        <a href="tiendita.html?producto=${producto.id}" class="btn btn-orange btn-sm" ${buttonDisabled}>${buttonText}</a>
+                    </div>
+                `;
+                
+                contenedor.appendChild(productoHTML);
+            });
+            
+        } catch (error) {
+            console.error('Error al cargar productos destacados:', error);
+        }
+    }
+    
+    // Cargar productos cuando la página esté lista
+    window.addEventListener('load', cargarProductosDestacados);
+</script>
+</body>
+</html>

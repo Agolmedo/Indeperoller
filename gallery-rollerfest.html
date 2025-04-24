@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+<style>
+    @font-face {
+        font-family: 'Capture_it';
+        src: url('fonts/Capture_it') format('woff2'),
+             url('fonts/Capture_it.woff') format('woff'),
+             url('fonts/Capture_it.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+</style>    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roller Fest 2025 - IndepeRoller</title>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <style>
+        :root {
+            --blue: #3498db;
+            --violet: #000000;
+            --orange: #ff1800;
+            --light: #f5f5f5;
+            --dark: #2c3e50;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--violet);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--orange);
+        }
+
+        .logo i {
+            margin-right: 10px;
+            color: var(--blue);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-left: 30px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: var(--violet);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: var(--violet);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover {
+            background-color: var(--blue);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-orange {
+            background-color: var(--orange);
+        }
+
+        .btn-orange:hover {
+            background-color: #d35400;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: var(--dark);
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Encabezado de galería */
+        .gallery-header {
+            height: 40vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/galeria11.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            margin-top: 80px;
+        }
+
+        .gallery-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease;
+        }
+
+        /* Contenido de galería */
+        .gallery-content {
+            padding: 60px 0;
+        }
+
+        .gallery-description {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+
+        /* Cuadrícula de galería */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            height: 200px;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-item a {
+            display: block;
+            height: 100%;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Botón volver */
+        .back-button-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        /* Sección de video */
+        .video-section {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .video-section h2 {
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: var(--violet);
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding-bottom: 56.25%; /* Proporción 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container iframe,
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .footer-links li {
+            margin: 0 15px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--orange);
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hamburger {
+                display: block;
+            }
+
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                gap: 0;
+                flex-direction: column;
+                background-color: white;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+                padding: 20px 0;
+                z-index: 999;
+            }
+
+            .nav-item {
+                margin: 15px 0;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .gallery-header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                <img src="img/logo_indeperoller.png" alt="Logo IndepeRoller" style="height: 40px; margin-right: 10px;"><span style="font-family: 'Capture_it', sans-serif; color: black;">Indepe<span style="color: var(--orange); font-family: 'Capture_it', sans-serif;">Roller</span></span></a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html#home" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="index.html#about" class="nav-link">¿Quiénes Somos?</a></li>
+                    <li class="nav-item"><a href="index.html#services" class="nav-link">¿Qué Hacemos?</a></li>
+                    <li class="nav-item"><a href="index.html#gallery" class="nav-link">Galería</a></li>
+                    <li class="nav-item"><a href="index.html#disciplines" class="nav-link">Disciplinas</a></li>
+		    <li class="nav-item"><a href="tiendita.html" class="nav-link">Tiendita Roller</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="gallery-header">
+        <div class="container">
+            <h1>Roller Fest 2025</h1>
+        </div>
+    </section>
+
+    <section class="gallery-content">
+        <div class="container">
+            <div class="gallery-description">
+                <p>Revive los mejores momentos del Roller Fest 2025, un evento donde patinadores de todas las edades y niveles disfrutaron de una jornada llena de diversión, aprendizaje y competencia. Nuestro club IndepeRoller participó activamente en este gran evento que reunió a la comunidad del patinaje urbano.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Imágenes con lightbox -->
+                <div class="gallery-item">
+                    <a href="img/roller_fest_2025/img_1219.jpg" data-lightbox="rollerfest" data-title="Competidores en Roller Fest 2025">
+                        <img src="img/roller_fest_2025/img_1219.jpg" alt="Roller Fest 2025 - DJ Evento">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="img/roller_fest_2025/img_1225.jpg" data-lightbox="rollerfest" data-title="Equipo IndepeRoller">
+                        <img src="img/roller_fest_2025/img_1225.jpg" alt="Roller Fest 2025 - Equipo">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="img/roller_fest_2025/img_1266.jpg" data-lightbox="rollerfest" data-title="Clase Grupal">
+                        <img src="img/roller_fest_2025/img_1266.jpg" alt="Roller Fest 2025 - Clase">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="img/roller_fest_2025/img_1361.jpg" data-lightbox="rollerfest" data-title="Funcion para los niños">
+                        <img src="img/roller_fest_2025/img_1361.jpg" alt="Roller Fest 2025 - Funcion">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="img/roller_fest_2025/img_1216.jpg" data-lightbox="rollerfest" data-title="DJ Musica">
+                        <img src="img/roller_fest_2025/img_1216.jpg" alt="DJ Musica">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="img/roller_fest_2025/img_1206.jpg" data-lightbox="rollerfest" data-title="Roller Soccer">
+                        <img src="img/roller_fest_2025/img_1206.jpg" alt="Soccer">
+                    </a>
+                </div>
+
+                
+                <!-- PLANTILLA PARA AGREGAR NUEVA IMAGEN
+                <div class="gallery-item">
+                    <a href="img/RUTA_IMAGEN_GRANDE.jpg" data-lightbox="rollerfest" data-title="DESCRIPCION_IMAGEN">
+                        <img src="img/RUTA_IMAGEN_MINIATURA.jpg" alt="TEXTO_ALTERNATIVO">
+                    </a>
+                </div>
+                -->
+            </div>
+
+            <div class="back-button-container">
+                <a href="index.html#gallery" class="btn btn-orange">Volver a la galería principal</a>
+            </div>
+            
+            <!-- Sección de video -->
+            <div class="video-section">
+                <h2>Videos del evento</h2>
+                <div class="video-container">
+                    <!-- Video de YouTube 
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de Roller Fest 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		    -->
+                    
+                    <!-- Alternativa: Video local -->
+                    <video controls>
+                        <source src="videos/rollerfest2025/martin_salto.mp4" type="video/mp4">
+    			<source src="videos/rollerfest2025/martin_salto.webm" type="video/webm">
+    			<source src="videos/rollerfest2025/martin_salto.ogv" type="video/ogg">
+                        Tu navegador no soporta videos HTML5.
+                    </video>
+                    
+                </div>
+
+		<!-- Segundo video
+    		<h3>Entrevistas con los ganadores</h3>
+    		<div class="video-container">
+        	   <video controls>
+            	   <source src="videos/skatecross/entrevistas.mp4" type="video/mp4">
+            	   Tu navegador no soporta videos HTML5.
+        	    </video>
+    		</div>
+    		 -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>IndepeRoller - Club de Patinaje Urbano</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html#home">Inicio</a></li>
+                <li><a href="index.html#about">¿Quiénes Somos?</a></li>
+                <li><a href="index.html#services">¿Qué Hacemos?</a></li>
+                <li><a href="index.html#gallery">Galería</a></li>
+                <li><a href="index.html#disciplines">Disciplinas</a></li>
+		<li><a href="tiendita.html">Tiendita Roller</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+            <div class="copyright">
+                <p>&copy; 2025 IndepeRoller. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script>
+        // Configuración de lightbox
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'albumLabel': "Imagen %1 de %2"
+        });
+        
+        // Menú hamburguesa
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+    </script>
+</body>
+</html>
