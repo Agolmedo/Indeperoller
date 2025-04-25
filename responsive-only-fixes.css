@@ -1,0 +1,162 @@
+/* ======= AJUSTES RESPONSIVOS SIN CAMBIAR COLORES ======= */
+
+/* Hero section fixes (home) */
+.hero {
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    background-position: center; /* Centra la imagen en todos los dispositivos */
+}
+
+.hero-content {
+    padding-top: 120px; /* Aumenta el padding superior para dar espacio al logo */
+    padding-bottom: 100px; /* Más espacio abajo para el botón */
+}
+
+.hero-content img {
+    max-width: 220px; /* Ajusta el tamaño del logo */
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejorar legibilidad */
+    margin-bottom: 25px;
+}
+
+.hero p {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 35px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero .btn {
+    position: relative;
+    z-index: 5; /* Posiciona el botón por encima de la ola */
+    margin-bottom: 80px; /* Más espacio para que no se pierda con la ola */
+}
+
+/* Wave ajustada */
+.wave {
+    height: 80px; /* Altura reducida */
+    z-index: 1;
+}
+
+/* Mejoras generales de legibilidad */
+.section-title h2::after {
+    height: 4px; /* Ligeramente más gruesa para mejor visibilidad */
+}
+
+.btn {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Páginas de galería */
+.gallery-header h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-caption {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8)); /* Overlay más oscuro */
+}
+
+/* ======= AJUSTES RESPONSIVOS PARA DIFERENTES TAMAÑOS ======= */
+@media (max-width: 992px) {
+    .hero {
+        min-height: 100vh;
+    }
+    
+    .hero-content {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .wave {
+        height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                    url('img/Martin_background2.jpg') center/cover no-repeat;
+    }
+    
+    .hero-content {
+        padding-top: 90px;
+    }
+    
+    .hero-content img {
+        max-width: 160px; /* Logo más pequeño en móviles */
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+    
+    .hero .btn {
+        margin-bottom: 50px;
+    }
+    
+    .wave {
+        height: 50px;
+    }
+    
+    /* Ajuste para las galerías en mobile */
+    .gallery-header {
+        height: 30vh;
+    }
+    
+    .gallery-item {
+        height: 180px;
+    }
+    
+    .gallery-caption {
+        padding: 10px;
+        display: block;
+        opacity: 1; /* Siempre visible en móvil */
+        transform: translateY(0);
+    }
+    
+    /* Carrito en tiendita */
+    .cart-icon {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .wave {
+        height: 40px;
+    }
+    
+    .gallery-item {
+        height: 160px;
+    }
+    
+    /* Específico para páginas de galería */
+    .gallery-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+}
